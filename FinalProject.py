@@ -233,56 +233,46 @@ def numberGuessGame():
 #_____________________________________________________________________________________________________________________________________
 #Turtle function
 def turtleArt():
+    import time 
+    import turtle
+    screen = turtle.Screen()
+    t = turtle.Turtle()
+    t.width(5)
     #paste turtle code here
     #Shape Functions
     #Actually did this part last
     def drawSquare():
-        import turtle
-        screen = turtle.Screen()
-        t = turtle.Turtle()
-        t.width(5)
         for i in range(4):
             t.fd(100)
             t.rt(90) #or t.fd(360/4)
+        time.sleep(2)
+        t.clear()
         #screen.exitonclick()  #To exit turtle screen just click on it
     def drawTriangle():
-        import turtle
-        screen = turtle.Screen()
-        t = turtle.Turtle()
-        t.width(5)
         for i in range(3):
             t.fd(100)
             t.lt(120) #or t.fd(360/3)
-        
+        time.sleep(2)
+        t.clear()
     def drawCircle():
-        import turtle
-        screen = turtle.Screen()
-        t = turtle.Turtle()
-        t.width(5)
         t.circle(100)
-        
+        time.sleep(2)
+        t.clear()
     def drawHexagon():
-        import turtle
-        screen = turtle.Screen()
-        t = turtle.Turtle()
-        t.width(5)
         for i in range(6):
             t.fd(100)  
             t.rt(60) #or t.fd(360/6)
-           
-        
+        time.sleep(2)
+        t.clear()
+              
     def drawOctagon():
-        import turtle
-        screen = turtle.Screen()
-        t = turtle.Turtle()
         t.width(5)
         for i in range(8):
             t.fd(100)  
             t.rt(45) #or t.fd(360/8)
+        time.sleep(2)
+        t.clear()
          
-
-
-
     shapeList = ['square', 'triangle', 'circle', 'hexagon','octagon']
     print("I can draw shapes")
     print("I can draw a square, a triangle, a circle, a hexagon, or an octagon")
@@ -295,8 +285,10 @@ def turtleArt():
             print(" ")
             continue
         else:
+            print(" ")
             print("Open Turtle Window to view drawing")
             break
+    print("TURTLE DRAWING WILL ONLY LIVE FOR 2 SECONDS. THEN SCREEN WILL CLEAR")
     if shapeEntered == 'square':
         drawSquare()
         #print("square") #for testing purposes before actually defining functions
@@ -317,7 +309,6 @@ def turtleArt():
         #print("Octagon") #for testing purposes before actually defining functions
 
     print(" ")
-    print("TO RESTART TURTLE GRAPHIC DRAWING BOARD, EXIT AND RETURN")
     
     #Call mainMenu function to retrive main menu again AUTOMATICALLY
     #mainMenu()
@@ -338,9 +329,11 @@ print(" ")
 
 #Def this function as mainMenu and call this function at the end of every program to return to menu
 def mainMenu():
+    import time
     print(" ")
     print("Opening Menu..........")
     print(" ")
+    time.sleep(1)
     print("\t \t Menu")
 
     #print menu options
@@ -374,13 +367,14 @@ def mainMenu():
         #print("turtle")             #For testing purposes
     else:
         print("Exiting Now......")      #exiting message
+        time.sleep(1)
         print("Good Bye!")
+        time.sleep(1)
         exit()                          #exit function
         
 
 #Call mainMenu function for the first time in the program output
 mainMenu()
-
 
 
 
