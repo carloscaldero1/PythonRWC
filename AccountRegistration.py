@@ -1,24 +1,3 @@
-#Ignore all of this will be for final presentation
-'''
-def Register():
-    print("Registraion Function Now operating")    #Move Account Registration program to this function
-    
-logOrReg = int(input("Enter 1 to Register and 2 to Login: "))
-if logOrReg == 1:                                           
-    Register()      
-elif logOrReg == 2:
-    print("LogIn()")                              #Must Define Log in Function above, It will first check that log in credentials are in username name and password "Databases"(Lists)
-                                                  #then it will display a menu for all previous programs under there own functions
-                                                  #User will Enter numbers that correspond to the program Example: 1 for Data Entry 2 for progress report 3 for number guessing game 4 or anything else to exit
-else:
-    print("You did not enter a valid choice. Now Exiting....")    #Exit function if User did not choose to log in or register
-    #exit()
-'''
-#Ignore all of this will be for final presentation
-
-
-#_________________________________________________________________________________________________________________________________
-
 print(" \t \t Register an Account")
 
 #Display Username and password Requirements for user to register an account
